@@ -1,0 +1,22 @@
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("/images/background.png") ;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  opacity: 90%;
+}
+hr {
+  color: "#997300"
+}
+button {
+  background-opacity: 90%;
+}
+footer {
+
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
