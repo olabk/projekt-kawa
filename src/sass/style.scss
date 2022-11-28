@@ -1,21 +1,65 @@
 .splash {
+  color: white;
+}
+.darkened-image{
   height: 100vh;
   position: relative;
+  filter: brightness(30%);
   background-image: url("/images/background.png") ;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
-  opacity: 90%;
 }
-hr {
-  color: "#997300"
+.page-title{
+  letter-spacing: 10px;
+  color: burlywood;
+  font-stretch: expanded;
+  font-size: 75px;
+  font-weight: bolder;
+  //filter: brightness(1);
 }
+.page-title::after {
+  position: absolute;
+  content: '';
+  bottom: -24px;
+  left: 50%;
+  width: 300px;
+  height: 5px;
+  transform: translateX(-50%);
+  background: burlywood;
+  filter: brightness(100%);
+}
+h1{
+  color: burlywood;
+  font-stretch: expanded;
+  text-align: center;
+  letter-spacing: 7px;
+}
+h1::after {
+  position: absolute;
+  content: '';
+  bottom: -70px;
+  left: 50%;
+  width: 500px;
+  height: 5px;
+  transform: translateX(-50%);
+  background: burlywood;
+}
+
+
 button {
   background-opacity: 90%;
 }
-footer {
 
+.about{
+  background-image: url("/images/about-us.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  //opacity: 90%;
+}
+
+footer {
   color: black;
   font-size: 10px;
   text-align: center;
